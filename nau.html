@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nauril — Building Digital Value.</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Nauril.</a>
+  <button class="hamburger" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta" onclick="window.location.href='mailto:nauril@email.com';return false;">Let's Talk</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-circle">
+    <img src="images/p1.png" alt="foto">
+    <div class="hero-circle-ph">
+      <span>👤</span>
+      Your Photo
+    </div>
+  </div>
+
+  <div class="hero-text">
+    <h1 class="hero-h1">
+      Building <span class="dim">Digital</span><br>Value.
+    </h1>
+    <p class="hero-sub">
+      I build personal portfolio websites that stand out.<br>
+      <strong>Modern &amp; Minimalist.</strong>
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-w">View My Work</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span>User Interface</span><span class="dot"> · </span>
+      <span>User Experience</span><span class="dot"> · </span>
+      <span>Web Development</span><span class="dot"> · </span>
+      <span>Mobile Apps</span><span class="dot"> · </span>
+      <span>System Design</span><span class="dot"> · </span>
+      <span>Prototyping</span><span class="dot"> · </span>
+      <span>User Interface</span><span class="dot"> · </span>
+      <span>User Experience</span><span class="dot"> · </span>
+      <span>Web Development</span><span class="dot"> · </span>
+      <span>Mobile Apps</span><span class="dot"> · </span>
+      <span>System Design</span><span class="dot"> · </span>
+      <span>Prototyping</span><span class="dot"> · </span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="container">
+    <p class="sec-label reveal about-top-label">Who I Am</p>
+    <h2 class="sec-title reveal about-sec-title">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <h3 class="about-name">Nauril Putri Hadining Tyas</h3>
+        <p class="about-bio">
+          I am a <strong>Informatics Engineering student</strong> at Politeknik Elektronika Negeri Surabaya.
+          My core focus lies in <strong>Backend Web Development</strong> using <strong>PHP and SQL</strong>,
+          complemented by foundational skills in frontend technologies and modern JavaFX for desktop solutions.
+          I focus on building scalable web and mobile solutions.
+        </p>
+        <p class="about-bio">
+          As an active staff member in the Research and Technology (Ristek) division at HIMAKALA PENS,
+          I collaborate on various technical programs. I am also a participant in the GCDOG Google Developer
+          on Campus PENS, where I actively explore Cloud Computing and the Google Cloud ecosystem.
+          Currently seeking internship opportunities to apply my technical expertise.
+        </p>
+
+
+        <div class="about-skills-row">
+          <span class="about-skill-chip">PHP</span>
+          <span class="about-skill-chip">SQL</span>
+          <span class="about-skill-chip">Laravel</span>
+          <span class="about-skill-chip">JavaScript</span>
+          <span class="about-skill-chip">JavaFX</span>
+          <span class="about-skill-chip">Google Cloud</span>
+          <span class="about-skill-chip">MySQL</span>
+          <span class="about-skill-chip">HTML/CSS</span>
+        </div>
+
+        <a href="#cv magang.pdf" download class="btn-w" style="display:inline-block;font-size:.82rem;margin-top:1rem;">Download CV</a>
+      </div>
+
+      <div class="about-photo reveal">
+        <img src="images/p3.jpeg" alt="foto">
+        <div class="about-photo-ph">
+          <span>🧑‍💻</span>
+          Formal Photo
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <div class="container">
+    <div class="proj-header reveal">
+      <div>
+        <p class="sec-label">Portfolio</p>
+        <h2 class="sec-title">Featured Projects</h2>
+        <p style="color:var(--muted);font-size:.88rem;margin-top:.5rem;">A collection of my recent work, side projects, and experiments.</p>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="Web">Web</button>
+        <button class="filter-tab" data-filter="Iot">Iot</button>
+        <button class="filter-tab" data-filter="Other">Other</button>
+      </div>
+    </div>
+
+    <div class="proj-grid" id="projGrid">
+      <a class="proj-card reveal" data-cat="Iot" href="#">
+        <div class="proj-thumb">
+          <img src="images/peweh.png" alt="piezolectric" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🌴</div>'">
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">IoT</div>
+          <div class="proj-name">Piezoelectric Sensor Energy</div>
+          <div class="proj-desc">Piezoelectric Water Sensor for Energy Harvesting</div>
+        </div>
+      </a>
+      <a class="proj-card reveal" data-cat="Web" href="#">
+        <div class="proj-thumb">
+          <img src="images/jaya.jpeg" alt="inventory" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>📚</div>'">
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Web</div>
+          <div class="proj-name">Warehouse Inventory Stock Management</div>
+          <div class="proj-desc">Inventory management system for warehouse operations</div>
+        </div>
+      </a>
+      <a class="proj-card reveal" data-cat="Web" href="#">
+        <div class="proj-thumb">
+          <img src="images/employe.jpeg" alt="Factory Employee Digital Attendance System" onerror="this.parentElement.innerHTML='<div class=proj-thumb-ph>🍱</div>'">
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Web</div>
+          <div class="proj-name">Factory Employee Digital Attendance System</div>
+          <div class="proj-desc">Digital attendance system for factory employees</div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ══ -->
+<section id="gallery">
+  <div class="container">
+    <p class="sec-label reveal">Visual Chronicles</p>
+    <h2 class="sec-title reveal">A curated collection of moments</h2>
+    <p style="color:var(--muted);font-size:.88rem;margin-top:.5rem;" class="reveal">Workspaces and creative explorations that define my journey.</p>
+    <div class="gallery-grid" style="margin-top:2.5rem;">
+      <div class="gal-item reveal">
+        <img src="images/shot.png" alt="organization" onerror="this.outerHTML='<div class=gal-item><div class=gal-ph>🎤</div></div>'">
+        <div class="gal-caption"><div class="gal-tag">Event</div><div class="gal-name">The Ristek Squad - HIMAKALA PENS</div></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="images/expo1.jpeg" alt="event" onerror="this.outerHTML='<div class=gal-item><div class=gal-ph>🎓</div></div>'">
+        <div class="gal-caption"><div class="gal-tag">Event</div><div class="gal-name">Campus Expo Representative</div></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="images/panit.jpeg" alt="LO" onerror="this.outerHTML='<div class=gal-item><div class=gal-ph>💻</div></div>'">
+        <div class="gal-caption"><div class="gal-tag">Event</div><div class="gal-name">Liaison Officer | LKMM-PraTD</div></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="images/demo.jpeg" alt="demoproject" onerror="this.outerHTML='<div class=gal-item><div class=gal-ph>🏭</div></div>'">
+        <div class="gal-caption"><div class="gal-tag"></div><div class="gal-name">Demo Project</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+
+    <!-- Big heading -->
+    <div class="contact-hero reveal">
+      <p class="sec-label">Get in Touch</p>
+      <h2 class="contact-big">
+        Let's <span class="dim">Work</span><br>Together.
+      </h2>
+      <p class="contact-sub">
+        Have a project in mind, want to collaborate, or just want to say hi?
+        My inbox is always open.
+      </p>
+      <a href="mailto:naurilputriit@gmail.com" class="contact-email-link">
+        @naurilputriit@gmail.com ↗
+      </a>
+    </div>
+
+    <!-- Social cards -->
+    <div class="contact-socials reveal">
+      <a href="mailto:naurilputriit@gmail.com" class="social-card">
+        <div class="social-card-icon">✉️</div>
+        <div class="social-card-platform">Email</div>
+        <div class="social-card-handle">naurilputriit@gmail.com</div>
+        <div class="social-card-arrow">Open Mail ↗</div>
+      </a>
+      <a href="https://github.com/NaurilPutri" target="_blank" class="social-card">
+        <div class="social-card-icon">🐙</div>
+        <div class="social-card-platform">GitHub</div>
+        <div class="social-card-handle">@NaurilPutri</div>
+        <div class="social-card-arrow">View Profile ↗</div>
+      </a>
+      <a href="https://linkedin.com/in/nauril-putri15" target="_blank" class="social-card">
+        <div class="social-card-icon">🔗</div>
+        <div class="social-card-platform">LinkedIn</div>
+        <div class="social-card-handle">Nauril Putri</div>
+        <div class="social-card-arrow">Connect ↗</div>
+      </a>
+      <a href="https://instagram.com/putt.yae" target="_blank" class="social-card">
+        <div class="social-card-icon">📸</div>
+        <div class="social-card-platform">Instagram</div>
+        <div class="social-card-handle">@putt.yae</div>
+        <div class="social-card-arrow">Follow ↗</div>
+      </a>
+    </div>
+
+    <!-- Meta strip -->
+    <div class="contact-meta reveal">
+      <div class="contact-meta-item">
+        <div class="avail-dot"></div>
+        <span>Available for <strong>Internship & Freelance</strong></span>
+      </div>
+      <div class="contact-meta-item">
+        📍 <span><strong>Surabaya</strong>, Indonesia</span>
+      </div>
+      <div class="contact-meta-item">
+        ⚡ <span>Usually replies within <strong>24 hours</strong></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">nauril.</div>
+        <div class="footer-avail">Available for new projects</div>
+        <p class="footer-tagline">Let's make something amazing together.</p>
+        <p style="color:var(--muted);font-size:.82rem;margin-top:1rem;">naurilputriit@gmail.com</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Menu</div>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Socials</div>
+        <ul class="footer-links">
+          <li><a href="https://github.com/naurilputri" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nauril-putri/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/nauril_" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Nauril Putri. All rights reserved.</span>
+      <a href="#hero" class="back-top">Back to Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navbar scroll
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  // active nav link
+  const sections = ['hero','about','projects','gallery','contact'];
+  let cur = 'hero';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 120) cur = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+});
+
+// Hamburger
+const burger = document.getElementById('burger');
+const links = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  links.classList.toggle('open');
+});
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Project filter
+document.querySelectorAll('.filter-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.proj-card').forEach(card => {
+      const show = f === 'all' || card.dataset.cat === f;
+      card.style.display = show ? 'block' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
