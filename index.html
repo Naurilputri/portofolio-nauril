@@ -170,6 +170,7 @@
 </section>
 
 <!-- ══ CERTIFICATES ══ -->
+<!-- ══ CERTIFICATES ══ -->
 <section id="certificates">
   <div class="container">
     <p class="sec-label reveal">Achievements</p>
@@ -178,25 +179,25 @@
 
     <div class="cert-grid">
 
-      <div class="cert-card reveal"  onclick="openCert('certificates/cert1.pdf', 'Google Cloud Fundamentals')"></div>>
-        <div class="cert-left"></div>  
-          <div class="cert-icon">🏅</div>
-          <div class="cert-info">
-            <div class="cert-title">Generative AI Fundamentals</div>
-            <div class="cert-issuer">RuangAI & Codepolitan</div>
-            <div class="cert-meta"></div>
-            <div class="cert-year">2026</div>
-            <span class="cert-dot">·</span>
-            <span class="cert-cat">Cloud Computing</span>
-        </div>
-      </div>
-    </div>
-    <span class="cert-link">Lihat PDF ↗</span>
-      </div>
-
-      <div class="cert-card reveal" onclick="openCert('certificates/cert2.pdf', 'Web Development')">
+      <div class="cert-card reveal" onclick="openCert('certificates/cert1.pdf', 'Generative AI Fundamentals')">
         <div class="cert-left">
           <div class="cert-badge">🎓</div>
+          <div class="cert-info">
+            <div class="cert-title">Generative AI Fundamentals</div>
+            <div class="cert-issuer">RuangAI - CODEPOLITAN</div>
+            <div class="cert-meta">
+              <span class="cert-year">2026</span>
+              <span class="cert-dot">·</span>
+              <span class="cert-cat">Generative AI</span>
+            </div>
+          </div>
+        </div>
+        <span class="cert-link">Lihat PDF ↗</span>
+      </div>
+
+      <div class="cert-card reveal" onclick="openCert('certificates/cert2.pdf', 'Web Development Study Jam #2')">
+        <div class="cert-left">
+          <div class="cert-badge">🌐</div>
           <div class="cert-info">
             <div class="cert-title">Web Development Study Jam #2</div>
             <div class="cert-issuer">Google Developer Groups on Campus</div>
@@ -210,9 +211,9 @@
         <span class="cert-link">Lihat PDF ↗</span>
       </div>
 
-      <div class="cert-card reveal" onclick="openCert('certificates/cert3.pdf', 'Nama Sertifikat Lainnya')">
+      <div class="cert-card reveal" onclick="openCert('certificates/cert3.pdf', 'Embedded Development Study Jam #2')">
         <div class="cert-left">
-          <div class="cert-badge">⚡</div>
+          <div class="cert-badge">⚙️</div>
           <div class="cert-info">
             <div class="cert-title">Embedded Development Study Jam #2</div>
             <div class="cert-issuer">Google Developer Groups on Campus</div>
@@ -226,9 +227,9 @@
         <span class="cert-link">Lihat PDF ↗</span>
       </div>
 
-      <div class="cert-card reveal" onclick="openCert('certificates/cert4.pdf', 'Nama Sertifikat Lainnya')">
+      <div class="cert-card reveal" onclick="openCert('certificates/cert4.pdf', 'Cloud Computing Study Jam #2')">
         <div class="cert-left">
-          <div class="cert-badge">⚡</div>
+          <div class="cert-badge">☁️</div>
           <div class="cert-info">
             <div class="cert-title">Cloud Computing Study Jam #2</div>
             <div class="cert-issuer">Google Developer Groups on Campus</div>
@@ -242,9 +243,9 @@
         <span class="cert-link">Lihat PDF ↗</span>
       </div>
 
-      <div class="cert-card reveal" onclick="openCert('certificates/cert5.pdf', 'Nama Sertifikat Lainnya')">
+      <div class="cert-card reveal" onclick="openCert('certificates/cert5.pdf', 'Machine Learning Study Jam #2')">
         <div class="cert-left">
-          <div class="cert-badge">⚡</div>
+          <div class="cert-badge">🤖</div>
           <div class="cert-info">
             <div class="cert-title">Machine Learning Study Jam #2</div>
             <div class="cert-issuer">Google Developer Groups on Campus</div>
@@ -261,6 +262,20 @@
     </div>
   </div>
 </section>
+
+<!-- ══ PDF LIGHTBOX ══ -->
+<div id="certLightbox" class="cert-lightbox" onclick="closeCert(event)">
+  <div class="cert-lightbox-box">
+    <div class="cert-lightbox-header">
+      <span id="certLightboxTitle" class="cert-lightbox-title"></span>
+      <div class="cert-lightbox-actions">
+        <a id="certDownloadBtn" href="#" download class="cert-lb-btn">⬇ Download</a>
+        <button class="cert-lb-close" onclick="closeCertBtn()">✕</button>
+      </div>
+    </div>
+    <iframe id="certFrame" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
 <!-- ══ GALLERY ══ -->
 <section id="gallery">
